@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.use('/images', express.static('./public/images'));
+app.use(express.static('public/images'));
 
 app.use('/tags', tags);   
 app.use('/photos', photos); 
